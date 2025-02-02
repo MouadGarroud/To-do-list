@@ -1,0 +1,118 @@
+/* Mouad Garroud */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh; 
+}
+.add_task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+}
+.add_task input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.add_task button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.add_task button:hover {
+    background-color: #218838;
+}
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 60vh; 
+    padding-right: 5px;
+}
+.task::-webkit-scrollbar {
+    width: 6px;
+}
+.task::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+.task::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.info input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    flex: 1;
+}
+
+.info p {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+}
+.info form {
+    display: flex;
+    gap: 5px;
+}
+.info button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.info button[name="toggle"] {
+    background-color: #007bff;
+    color: white;
+}
+.info button[name="toggle"]:hover {
+    background-color: #0056b3;
+}
+.info button[name="delete"] {
+    background-color: #dc3545;
+    color: white;
+}
+.info button[name="delete"]:hover {
+    background-color: #c82333;
+}
